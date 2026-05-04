@@ -1,0 +1,54 @@
+.tree-visualization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 550px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.tree-visualization.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tree-svg {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 100%;
+  height: auto;
+}
+
+/* Scrollbar styling */
+.tree-visualization::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.tree-visualization::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.tree-visualization::-webkit-scrollbar-thumb {
+  background: #4ecdc4;
+  border-radius: 8px;
+}
+
+.tree-visualization::-webkit-scrollbar-thumb:hover {
+  background: #3db8ae;
+}
+
+/* Firefox scrollbar */
+.tree-visualization {
+  scrollbar-color: #4ecdc4 rgba(0, 0, 0, 0.1);
+  scrollbar-width: thin;
+}
